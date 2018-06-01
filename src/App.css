@@ -1,0 +1,94 @@
+body {
+  background: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Sans Serif';
+  box-sizing: border-box;
+}
+
+.App {
+  height: 50rem;
+  width: 30rem;
+  background: #ebebeb;
+}
+
+.Display {
+  background: #f8f8f8;
+  color: black;
+  display: flex;
+  box-sizing: border-box;
+  height: 10rem;
+  font-size: 1.3rem;
+}
+
+.Display-calc {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  border: 36px rgb(31, 30, 30) solid;
+}
+
+.Display-name {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  background: rgb(31, 30, 30);
+}
+
+.Buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 40rem;
+}
+
+.Button {
+  background: rgba(156, 156, 156, 1);
+  background: linear-gradient(
+    to right,
+    rgba(156, 156, 156, 1) 0%,
+    rgba(151, 151, 151, 1) 72%,
+    rgba(150, 150, 150, 1) 83%,
+    rgba(148, 148, 148, 1) 89%,
+    rgba(145, 145, 145, 1) 100%
+  );
+
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  height: 20%;
+  min-width: 25%;
+}
+.Button[data-size='2'] {
+  height: 40%;
+}
+.Button[data-color='dark'] {
+  background: rgba(219, 219, 219, 1);
+  background: linear-gradient(
+    to right,
+    rgba(219, 219, 219, 1) 0%,
+    rgba(213, 213, 213, 1) 72%,
+    rgba(212, 212, 212, 1) 83%,
+    rgba(209, 209, 209, 1) 89%,
+    rgba(204, 204, 204, 1) 100%
+  );
+}
+.Button[data-value='null'] {
+  pointer-events: none;
+}
+.Button:hover {
+  background: #bebebe;
+  cursor: pointer;
+}
+.Button:active {
+  background: #b8a9ac;
+}
